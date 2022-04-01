@@ -15,7 +15,7 @@ client.on('ready', () => {
 
   setInterval(() => {
     let date = new Date()
-    if (date.getHours() == 20 && date.getMinutes() == 41 && date.getSeconds() == 06) {
+    if (date.getHours() == 20 && date.getMinutes() == 45 && date.getSeconds() == 06) {
       sendClive()
     }
   }, 1000)
