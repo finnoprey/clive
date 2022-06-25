@@ -35,7 +35,9 @@ client.on('ready', () => {
 
   setInterval(() => {
     let date = new Date()
-    if (date.getHours() == 20 && date.getMinutes() == 45 && date.getSeconds() == 06) {
+
+    // send message 20 seconds before clive time (which of course is 20:45:06)
+    if (date.getHours() == 20 && date.getMinutes() == 44 && date.getSeconds() == 46) {
       sendClive()
     }
   }, 1000)
