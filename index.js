@@ -6,7 +6,27 @@ let guild
 let channel
 
 function sendClive() {
-  channel.send('@everyone Daily Clive Time!\n https://www.youtube.com/watch?v=C1UB1-LKX5E')
+  const messages = [
+    'Clive time? Already?', 
+    'It\'s our daily clive time..', 
+    'Stop what you\'re doing. It\'s clive time!',
+    'Hurry, clive time is just second away!',
+    'Broadcasting clive in... 20 seconds..',
+    'I\'ve been waiting all day for this',
+    'What time is it? Say it with me... clive time!',
+    'Shut up clive!',
+    'It\'s control shift eight. Unbelievable.',
+    'You are fired.',
+    'I\'m expected a roughly 10-20% drop',
+    'James what are you doing?',
+    'I thought I was frozen...',
+    'That was a trap, and you are fired.',
+    'We\'re seconds away folks...',
+    'I really hope you didn\'t forget.'
+  ]
+
+  let message = messages[Math.floor(Math.random()  * messages.length)]
+  channel.send('@everyone ' + message + '\nhttps://shutupc.live')
 }
 
 client.on('ready', () => {
